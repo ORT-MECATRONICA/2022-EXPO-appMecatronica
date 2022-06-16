@@ -8,9 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import com.ortmecatronica.appmecatronica.R
 import com.ortmecatronica.appmecatronica.infoFeature.ui.viewmodel.InfoViewModel
-import dagger.hilt.android.AndroidEntryPoint
 
-@AndroidEntryPoint
+//@AndroidEntryPoint
 class InfoFragment : Fragment() {
 
     companion object {

@@ -10,9 +10,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationBarView
 import com.ortmecatronica.appmecatronica.R
 import com.ortmecatronica.appmecatronica.databinding.ActivityMenuBinding
-import dagger.hilt.android.AndroidEntryPoint
 
-@AndroidEntryPoint
+//@AndroidEntryPoint
 class MenuActivity : AppCompatActivity() {
 
     private lateinit var bottomNavigationView : BottomNavigationView

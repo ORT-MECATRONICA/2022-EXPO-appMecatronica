@@ -6,18 +6,24 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
 import com.ortmecatronica.appmecatronica.R
 import com.ortmecatronica.appmecatronica.areasFeature.ui.viewmodel.AreasViewModel
-import dagger.hilt.android.AndroidEntryPoint
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
-@AndroidEntryPoint
+//@AndroidEntryPoint
 class AreasFragment : Fragment() {
+
+    val viewModel : AreasViewModel by viewModel()
 
     companion object {
         fun newInstance() = AreasFragment()
     }
 
-    private lateinit var viewModel: AreasViewModel
+    override fun onStart() {
+        super.onStart()
+        viewModel.getAreas()
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
